@@ -88,16 +88,8 @@ namespace LV587SETOPENCART.Tests
            
             Thread.Sleep(2000);  //Only for presentation
 
-            //string actulHTC = pageWithProducts.GetAlertMessageText();
-            //string expectedHTC = "Success: You have added HTC Touch HD to your product comparison!\r\n×";
-
             pageWithProducts.SelectProduct(pageWithProducts.CompareButtonIphone);//Click copmpare Iphone
-            Thread.Sleep(2000);  //Only for presentation
-
-            //string actulIPhone = pageWithProducts.GetAlertMessageText();
-            //string expectedIPhone = "Success: You have added iPhone to your product comparison!\r\n×";
-            //Assert.AreEqual(actulHTC, expectedHTC);
-            //Assert.AreEqual(actulIPhone, expectedIPhone);
+            Thread.Sleep(2000);  //Only for presentation           
 
             string actul = pageWithProducts.GetProductComparisonText();
             string expected = "Product Compare (2)";
